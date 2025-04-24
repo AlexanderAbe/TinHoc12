@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký CLB</title>
+    <style>
+        table {
+            padding: 10px;
+            border: 2px solid blue;
+            margin: auto;
+            background-color: lightyellow;
+        }
+
+        td {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ĐĂNG KÍ THÀNH VIÊN CLB NGOẠI KHOÁ<br>TRƯỜNG THPT NGUYỄN BỈNH KHIÊM</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>Họ tên:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><textarea name="address" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam"> Nam
+                    <input type="radio" name="gender" value="Nữ"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="Cờ vua"> Cờ vua<br>
+                    <input type="checkbox" name="hobby" value="Game"> Trò chơi điện tử<br>
+                    <input type="checkbox" name="hobby" value="Du lịch"> Du lịch<br>
+                    <input type="checkbox" name="hobby" value="Cắm hoa"> Cắm hoa<br>
+                    <input type="checkbox" name="hobby" value="Nấu ăn"> Nấu ăn
+                </td>
+            </tr>
+            <tr>
+                <td>Hồ sơ đính kèm:</td>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <tr>
+                <td>Đăng kí CLB:</td>
+                <td>
+                    <select name="club">
+                        <option value="bongda">Bóng đá</option>
+                        <option value="bongro">Bóng rổ</option>
+                        <option value="bongchuyen">Bóng chuyền</option>
+                        <option value="caulong">Cầu lông</option>
+                        <option value="boiloi">Bơi lội</option>
+                        <option value="Vothuat">Võ thuật</option>
+                        <option value="mithuat">Mĩ thuật</option>
+                        <option value="nhiepanh">Nhiếp ảnh</option>
+                        <option value="amnhac">Âm nhạc</option>
+                        <option value="khieuvu">Khiêu vũ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="button" onclick="window.location.href='index.html'">Đăng kí</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
